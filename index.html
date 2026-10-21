@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Halloween Laval - Pompiers</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            min-height: 100vh;
+            background: #08090c;
+            color: #eee;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        .page-layout {
+            width: min(1200px, 100%);
+            min-height: calc(100vh - 56px);
+            margin: 0 auto;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+            grid-template-areas: "content poster";
+            align-items: center;
+            gap: 32px;
+        }
+        .poster {
+            grid-area: poster;
+            display: block;
+            width: 100%;
+            max-height: 88vh;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+        }
+        .contact-section {
+            grid-area: content;
+            background: #151515;
+            padding: 36px 28px;
+            border-top: 3px solid #ff6b00;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+        }
+        .contact-section h2 {
+            color: #ff8c00;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        .contact-section p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b00, #ff4500);
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 15px 0;
+            box-shadow: 0 4px 15px rgba(255, 100, 0, 0.4);
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .qr-section {
+            background: #0a0a0a;
+            padding: 40px 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            border: 2px solid #ff6b00;
+            border-radius: 15px;
+        }
+        .qr-section h3 {
+            color: #ff8c00;
+            margin-bottom: 15px;
+        }
+        .qr-section img {
+            max-width: 220px;
+            margin: 15px auto;
+            display: block;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            padding: 20px;
+            color: #666;
+            font-size: 0.8em;
+        }
+        @media (max-width: 760px) {
+            .page-layout {
+                min-height: auto;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "content"
+                    "poster";
+                gap: 20px;
+                padding: 16px;
+            }
+            .poster {
+                width: calc(100% + 32px);
+                max-width: none;
+                max-height: none;
+                height: auto;
+                margin-inline: -16px;
+                border-radius: 0;
+            }
+            .contact-section {
+                padding: 28px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="page-layout">
+        <img src="OEpd0gZY.png" alt="Joyeux Halloween Laval - Association des Pompiers de Laval" class="poster">
+
+        <section class="contact-section">
+            <h2>Posez vos questions aux conseillers de Laval</h2>
+            <p>Cliquez sur le bouton ci-dessous pour ouvrir votre application courriel. Le message sera pré-adressé en copie cachée (BCC) à tous les conseillers de districts de Laval. Écrivez votre question et appuyez sur Envoyer.</p>
+
+            <a class="btn" href="mailto:b.collette@laval.ca?bcc=isabelle.piche@laval.ca,annick.senghor@laval.ca,anick.brunet@laval.ca,christine.poirier@laval.ca,cecilia.macedo@laval.ca,martin.fiola@laval.ca,seta.topouzian@laval.ca,pierre.brabant@laval.ca,david.de-cotis@laval.ca,sylvain.yelle@laval.ca,mohamed.ba@laval.ca,sandra.el-helou@laval.ca,vasilios.karidogiannis@laval.ca,aglaia.revelakis@laval.ca,aline.dib@laval.ca,ray.khalil@laval.ca,nicholas.borne@laval.ca,yannick.langlois@laval.ca,louise.lortie@laval.ca,carole.st-denis@laval.ca,flavia.alexandra.novac@laval.ca,martin.vaillancourt@laval.ca&subject=Question%20aux%20conseillers%20de%20Laval%20-%20S%C3%A9curit%C3%A9%20et%20services%20incendie&body=Bonjour,%0A%0AJe%20souhaite%20poser%20la%20question%20suivante%20concernant%20la%20s%C3%A9curit%C3%A9%20et%20les%20services%20incendie%20%C3%A0%20Laval%20:%0A%0A%0A%0AMerci%20de%20votre%20attention.%0A%0ACordialement,">
+                Écrire à tous les conseillers de districts
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        Page informelle créée à titre informatif pour les citoyens de Laval — Aucun suivi.
+    </footer>
+</body>
+</html>
